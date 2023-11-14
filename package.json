@@ -1,0 +1,12 @@
+{
+  "name": "springboot-gc-pubsub",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "google_login": "gcloud auth login",
+    "google_config_setup": "gcloud config set project",
+
+    "curl_send_test_message": "curl -H \"Content-Type: application/json\" -d \"Hello, this is a test.\"  localhost:8080/send/",
+    "curl_send_ship": "curl -H \"Content-Type: application/json\" -d @./payloads/spaceship1.json  localhost:8080/send/"
+  }
+}
